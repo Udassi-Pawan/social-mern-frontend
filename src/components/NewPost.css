@@ -1,0 +1,71 @@
+.Newpost {
+  height: fit-content;
+  width: 35vw;
+}
+
+.Newpost img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.Newpost svg {
+  width: 2rem;
+}
+
+.Newpost .grey {
+  opacity: 0.7;
+}
+
+.Newpost div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Newpost .post-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Newpost .post-options label {
+  cursor: pointer;
+}
+
+.Newpost input {
+  width: 90%;
+  border: none;
+  background-color: #ddd;
+  border-radius: 100px;
+  padding: 1.2rem;
+}
+
+.Newpost button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background-color: aqua;
+  border-radius: 100px;
+  color: #444;
+  cursor: pointer;
+}
+
+.Newpost label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Newpost #actual-bin {
+  display: none;
+  visibility: hidden;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.dark input {
+  color: #aaa;
+}

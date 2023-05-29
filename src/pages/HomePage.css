@@ -1,0 +1,12 @@
+.homepage .homepage-divs {
+  display: flex;
+  justify-content: center;
+  /* flex-basis: content; */
+}
+
+.homepage .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}

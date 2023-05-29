@@ -1,0 +1,96 @@
+.homepage-profile {
+  width: 25vw;
+  height: fit-content;
+}
+
+.homepage-profile img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.homepage-profile .top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.homepage-profile .details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homepage-profile .top .name {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: black;
+}
+
+.homepage-profile .top p {
+  color: #777;
+  font-size: 1.5rem;
+}
+
+.homepage-profile svg {
+  width: 2rem;
+  cursor: auto;
+}
+
+.homepage-profile .two {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.homepage-profile .logos {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homepage-profile .grey {
+  opacity: 0.6;
+  font-size: 1.3rem;
+}
+
+.homepage-profile .darkk {
+  font-size: 1.3rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.line {
+  height: 0.2rem;
+  width: 100%;
+  background-color: #ddd;
+  margin: 2rem auto 2rem;
+}
+
+.homepage-profile .three {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.homepage-profile .who {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage-profile .profiles {
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr;
+  row-gap: 1rem;
+}
+
+.homepage-profile .social {
+  margin: 1rem 0 2rem;
+}
+
+.homepage-profile .edit {
+  justify-self: flex-end;
+  width: 1.5rem;
+}

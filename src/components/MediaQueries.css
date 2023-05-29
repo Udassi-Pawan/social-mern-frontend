@@ -1,0 +1,86 @@
+@media only screen and (max-width: 1135px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .homepage .right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 827px) {
+  html {
+    font-size: 48%;
+  }
+  .header-homepage .search {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .homepage .left {
+    display: none;
+  }
+  .Newpost {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 534px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media only screen and (max-width: 473px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/* for user-page */
+
+@media only screen and (max-width: 989px) {
+  .user-page .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-page .baki {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .user-page .FriendsList {
+    width: 33vw;
+    height: fit-content;
+  }
+  .user-page .homepage-profile {
+    width: 33vw;
+  }
+}
+
+@media only screen and (max-width: 631px) {
+  .user-page .FriendsList {
+    width: 100vw;
+  }
+  .user-page .homepage-profile {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 581px) {
+  .user-page .baki {
+    width: 70vw;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .user-page .FriendsList {
+    width: 50vw;
+  }
+  .user-page .homepage-profile {
+    width: 50vw;
+  }
+} ;

@@ -1,0 +1,75 @@
+.width {
+  width: 100%;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.header-homepage {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* width: 80%; */
+  margin: auto;
+}
+
+.header-homepage .title {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  justify-content: space-between;
+}
+
+.header-homepage .icons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.header-homepage h1 {
+  font-size: 4rem;
+  color: #30e3df;
+  font-weight: 1000;
+  margin-right: 0.4rem;
+}
+
+.header-homepage svg {
+  width: 2rem;
+  cursor: pointer;
+  margin-left: 0.4rem;
+}
+
+.header-homepage .search {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+}
+
+.header-homepage input {
+  border: none;
+  background-color: #eee;
+}
+
+.header-homepage .search svg {
+  fill: #777;
+  width: 1.4rem;
+}
+.header-homepage .search button {
+  border: none;
+}
+
+.header-homepage .icons p {
+  font-size: 1.2rem;
+  background-color: #eee;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-homepage .icons p svg {
+  width: 1rem;
+}

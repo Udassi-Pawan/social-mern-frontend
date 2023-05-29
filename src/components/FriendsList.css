@@ -1,0 +1,11 @@
+.FriendsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.FriendsList p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,61 @@
+.dark {
+  background-color: #222;
+  color: white;
+}
+
+.card.dark {
+  background-color: #333 !important;
+  color: white;
+}
+
+.dark .width {
+  background-color: #222;
+}
+
+.dark input {
+  background-color: #444 !important;
+}
+
+.dark .header-homepage .search {
+  background-color: #444;
+}
+
+.dark svg {
+  fill: #888;
+}
+
+.dark .header-homepage .icons p {
+  background-color: #333;
+}
+
+.dark .width p {
+  background-color: #333;
+  color: #eee;
+}
+
+.dark .homepage-profile .name {
+  color: #ccc;
+}
+
+.dark .line {
+  background-color: #444;
+}
+
+.dark .profile p {
+  color: #eee !important;
+}
+
+.profile p {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+
+.dark .SinglePost p.comment {
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.dark .header-homepage .search button {
+  background-color: inherit;
+}

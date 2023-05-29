@@ -1,0 +1,5 @@
+.user-page .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}

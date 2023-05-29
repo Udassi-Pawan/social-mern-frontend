@@ -1,0 +1,88 @@
+.SinglePost svg {
+  width: 2rem;
+}
+
+.SinglePost .caption {
+  margin: 1rem 0 1rem;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.SinglePost .post {
+  border-radius: 1rem;
+  max-height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.SinglePost .reactions div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.SinglePost .reactions div p {
+  font-size: 1.2rem;
+}
+
+.SinglePost .reactions {
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr;
+  justify-items: flex-end;
+}
+.SinglePost .comment {
+  margin-left: 1rem;
+  justify-self: flex-start;
+}
+
+.SinglePost svg {
+  cursor: pointer;
+}
+
+.SinglePost {
+  display: flex;
+  flex-direction: column;
+}
+
+.SinglePost .love {
+  fill: rgb(13, 205, 205);
+}
+
+.SinglePost .line {
+  margin: 0 auto 0;
+  height: 0.1rem !important;
+}
+.SinglePost p.comment {
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.SinglePost input {
+  width: 88%;
+  border: none;
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 0.6rem;
+  margin: 0.8rem auto 0.5rem;
+}
+
+.SinglePost .add-comment {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.SinglePost .btn-comment {
+  height: fit-content;
+  padding: 0.8rem 0.4rem;
+  font-size: 1rem;
+  border: none;
+  background-color: aqua;
+  border-radius: 10px;
+  color: #444;
+  cursor: pointer;
+}

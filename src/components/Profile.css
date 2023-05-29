@@ -1,0 +1,51 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top svg {
+  width: 2rem;
+  cursor: pointer;
+}
+.top .blue {
+  fill: #4267b2;
+}
+
+.profile #fotu {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile .cred {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.profile .author {
+  font-size: 1.5rem;
+  font-weight: 550;
+  opacity: 0.8;
+  margin: 0;
+}
+.profile .loc {
+  margin: 0;
+  opacity: 0.5;
+  font-size: 1.1rem;
+}
+
+.profile {
+  cursor: pointer;
+}
+
+.profile p {
+  text-decoration: none !important ;
+}

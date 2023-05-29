@@ -1,0 +1,13 @@
+.header-auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.header-auth h1 {
+  font-size: 4rem;
+  margin: 2rem;
+  color: #30e3df;
+  font-weight: 1000;
+}
