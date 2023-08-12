@@ -52,6 +52,7 @@ const LoginModal = () => {
         <Link to="/register" className="link">
           Don't have an account? Sign up here.
         </Link>
+        <p>Guest username and password: a@b.com 123456 </p>
       </div>
     </Card>
   );

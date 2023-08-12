@@ -11,6 +11,8 @@ const SinglePost = ({ post }) => {
   const [user] = useContext(Context);
   const [commentBox, setCommentBox] = useState(false);
 
+  console.log(post);
+
   const addCommentHandler = async () => {
     const result = await fetch(`${backend_url}/post/${post._id}/comment`, {
       method: "PATCH",

@@ -105,7 +105,9 @@ const RegisterModal = () => {
         <button formAction="submit" onClick={clickHandler}>
           Register
         </button>
-        <Link className="link">Already have an account? Login here.</Link>
+        <Link to="/login" className="link">
+          Already have an account? Login here.
+        </Link>
       </div>
     </Card>
   );

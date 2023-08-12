@@ -1,13 +1,20 @@
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import {
+  useHistory,
+  useParams,
+} from "react-router-dom/cjs/react-router-dom.min";
 import HomepageProfile from "../components/HomepageProfile";
 import FriendsList from "../components/FriendsList";
 import "./UserPage.css";
 import HeaderHomepage from "../components/HeaderHomepage";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import PostsUser from "../components/PostsUser";
 import { backend_url } from "../helper";
+import { Context } from "../context";
 
 const UserPage = () => {
+  const history = useHistory();
+  const [user] = useContext(Context);
+  if (!user.email) history.push("/");
   const params = useParams();
   const id = params.id;
   const [localUser, setLocalUser] = useState({
