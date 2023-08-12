@@ -30,7 +30,7 @@ const LoginModal = () => {
     } catch (err) {
       return alert("Login Failed!");
     }
-    if (!result) return alert("Login Failed!");
+    if (!result || result.length != 2) return alert("Login Failed!");
 
     setUser(result[0]);
     setToken(result[1]);

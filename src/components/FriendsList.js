@@ -2,7 +2,7 @@ import "./FriendsList.css";
 import Card from "./Card";
 import "./FriendsList.css";
 import Profile from "./Profile";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const FriendsList = (props) => {
   const localuser = props.user;

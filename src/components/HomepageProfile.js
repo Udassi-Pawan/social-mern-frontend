@@ -1,6 +1,5 @@
 import "./HomepageProfile.css";
 import Card from "./Card";
-import { backend_url } from "../helper";
 
 const HomepageProfile = ({ user }) => {
   return (

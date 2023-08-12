@@ -1,6 +1,6 @@
 import "./App.css";
 import "./darkMode.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import RegisterPage from "./pages/RegisterPage";
 import UserPage from "./pages/UserPage";
