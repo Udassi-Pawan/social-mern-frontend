@@ -1,11 +1,13 @@
 import { useState, CSSProperties, useContext } from "react";
-import ClipLoader from "react-spinners/ClipLoader";
+import ScaleLoader from "react-spinners/ScaleLoader";
 import { Context } from "../context";
 
 const override: CSSProperties = {
   display: "block",
-  margin: "0 auto",
-  borderColor: "red",
+  position: "absolute",
+  top: "48%",
+  left: "48%",
+  borderColor: "grey",
 };
 
 function LoadingSpinner() {
@@ -15,11 +17,11 @@ function LoadingSpinner() {
   return (
     <div className="sweet-loading">
       {loading ? (
-        <ClipLoader
-          color={color}
-          //   loading={loading}
+        <ScaleLoader
+          color={"#30e3df"}
+          loading={true}
           cssOverride={override}
-          size={150}
+          size={350}
           aria-label="Loading Spinner"
           data-testid="loader"
         />

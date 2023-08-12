@@ -8,6 +8,7 @@ import LoginPage from "./pages/LoginPage";
 
 import ContextProvider from "./context.js";
 import DarkProvider from "./components/DarkProvider";
+import LoadingSpinner from "./components/LoadingSpinner";
 
 function App() {
   return (

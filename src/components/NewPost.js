@@ -6,6 +6,7 @@ import { backend_url } from "../helper";
 
 const NewPost = ({ user }) => {
   const [image, setImage] = useState("");
+  const [, , , , , , , , , setLoading] = useContext(Context);
 
   const convertToBase64 = (e) => {
     var reader = new FileReader();
@@ -20,6 +21,7 @@ const NewPost = ({ user }) => {
   const [, , , setPosts, token] = useContext(Context);
 
   const clickHandler = async (e) => {
+    setLoading(true);
     const data = new FormData();
     data.set("caption", imageLink.current.value);
     data.set("creator", user._id);
@@ -39,6 +41,7 @@ const NewPost = ({ user }) => {
       setPosts(await result.json());
     };
     getPosts();
+    setLoading();
   };
 
   return (

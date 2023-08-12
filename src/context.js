@@ -15,10 +15,22 @@ const ContextProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
   const [token, setToken] = useState("");
   const [mode, setMode] = useState(false);
+  const [loading, setLoading] = useState();
 
   return (
     <Context.Provider
-      value={[user, setUser, posts, setPosts, token, setToken, mode, setMode]}
+      value={[
+        user,
+        setUser,
+        posts,
+        setPosts,
+        token,
+        setToken,
+        mode,
+        setMode,
+        loading,
+        setLoading,
+      ]}
     >
       {children}
     </Context.Provider>

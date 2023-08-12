@@ -2,10 +2,13 @@ import "./RegisterModal.css";
 import Card from "./Card";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import validator from "validator";
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { backend_url } from "../helper";
+import { Context } from "../context";
 
 const RegisterModal = () => {
+  const [, , , , , , , , loading, setLoading] = useContext(Context);
+
   const [image, setImage] = useState("");
   const convertToBase64 = (e) => {
     var reader = new FileReader();
@@ -26,7 +29,7 @@ const RegisterModal = () => {
 
   const clickHandler = async (e) => {
     e.preventDefault();
-
+    setLoading(true);
     if (!validator.isEmail(email.current.value)) return alert("Invalid Email!");
 
     if (password.current.value.length < 6)
@@ -47,9 +50,10 @@ const RegisterModal = () => {
         body: data,
       });
     } catch (err) {
+      setLoading();
       return alert("Registraion Failed!");
     }
-
+    setLoading();
     if (!result) {
       return alert("Registration Failed!");
     } else alert("Registration Successful!. Login now to continue.");

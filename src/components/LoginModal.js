@@ -6,7 +6,8 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { Context } from "../context";
 import { backend_url } from "../helper";
 const LoginModal = () => {
-  const [, setUser, , , token, setToken] = useContext(Context);
+  const [, setUser, , , token, setToken, , , loading, setLoading] =
+    useContext(Context);
 
   const email = useRef();
   const password = useRef();
@@ -14,6 +15,7 @@ const LoginModal = () => {
   const clickHandler = async (e) => {
     e.preventDefault();
     let result;
+    setLoading(true);
 
     try {
       result = await fetch(backend_url + "/login", {
@@ -30,6 +32,7 @@ const LoginModal = () => {
     } catch (err) {
       return alert("Login Failed!");
     }
+    setLoading();
     if (!result || result.length != 2) return alert("Login Failed!");
 
     setUser(result[0]);
