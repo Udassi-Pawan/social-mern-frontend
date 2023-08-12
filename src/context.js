@@ -15,7 +15,7 @@ const ContextProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
   const [token, setToken] = useState("");
   const [mode, setMode] = useState(false);
-  const [loading, setLoading] = useState();
+  const [loading, setLoading] = useState(true);
 
   return (
     <Context.Provider
