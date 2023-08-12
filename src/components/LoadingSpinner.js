@@ -1,5 +1,5 @@
 import { useState, CSSProperties, useContext } from "react";
-import ScaleLoader from "react-spinners/ScaleLoader";
+import SquareLoader from "react-spinners/SquareLoader";
 import { Context } from "../context";
 
 const override: CSSProperties = {
@@ -16,16 +16,14 @@ function LoadingSpinner() {
 
   return (
     <div className="sweet-loading">
-      {loading ? (
-        <ScaleLoader
-          color={"#30e3df"}
-          loading={true}
-          cssOverride={override}
-          size={350}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      ) : null}
+      <SquareLoader
+        color={"#30e3df"}
+        loading={true}
+        cssOverride={override}
+        size={350}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
     </div>
   );
 }
